@@ -1,0 +1,24 @@
+body{
+	padding: 5px;
+	margin: 5px;
+	overflow: hidden;
+}
+
+img {
+	overflow: hidden;
+}
+
+.qrcode{
+	width: 250px;
+	height: 260px;
+	background-color: whitesmoke;
+	margin: 1px;
+}
+
+.title{
+	font-family: Courier New, Courier, monospace;
+	width:240px; 
+	white-space:nowrap; 
+	overflow:hidden; 
+	text-overflow:ellipsis;
+}

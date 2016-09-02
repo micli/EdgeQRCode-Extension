@@ -1,0 +1,35 @@
+{
+    "name" : "Edge QRCode",
+    "version" : "1.0.0.0",
+    "author" : "Fine Code Corporation",
+    "browser_action" : 
+    {
+        "default_icon" : 
+        {
+            "20" : "icons/icon_20.png",
+            "40" : "icons/icon_40.png"
+        },
+        "default_title" : "Edge QRCode",
+        "default_popup" : "index.html"
+    },
+    "content_scripts" : [{
+            "js" : ["js/index.js"],
+            "matches" : ["*://*/*"]
+        }
+    ],
+    "content_security_policy" : "script-src 'self'; object-src 'self'",
+    "default_locale" : "en",
+    "description" : "This is a simple extension that translate current url to QRCode for scan.",
+
+    "permissions" : 
+    [
+        "*://*/*", "notifications",  "activeTab", "tabs", "contextMenus", "background", "webNavigation"
+    ],
+    "icons" : {
+        "128" : "icons/icon_128.png",
+        "16" : "icons/icon_16.png",
+        "48" : "icons/icon_48.png"
+    },
+    "minimum_edge_version" : "38.14393.0.0",
+    "web_accessible_resources" : ["icons/icon_48.png"]
+} 
